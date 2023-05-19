@@ -1,0 +1,82 @@
+.list{
+    
+}
+.ulNav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    transition: .4s;
+}
+.ulNav  li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ulNav  li a{
+    text-decoration: none;
+    color: white;
+    transition-duration: .2s;
+    font-weight: 700;
+    font-size: 24px;
+}
+.ulNav  li .active{
+    background: #741906;
+    padding: 4px 8px;
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list img{
+    height: 30px;
+}
+.headerColor .ulNav  a{
+    color: #12273D;
+}
+.headerColor .ulNav .active{
+    color: white;
+}
+.showNav{
+    width: 100% !important;
+}
+@media (max-width:992px) {
+    .ulNav {
+        gap: 10px;
+    }
+    .ulNav li a {
+        font-size: 20px
+    }
+}
+@media (max-width:768px){
+    .ulNav{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 66px;
+        height: 92vh;
+        width: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #3f51b57d;
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+    }
+    .ulNav  li{
+        width: 100%;
+    }
+    .ulNav li a {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .headerColor .ulNav a {
+        color: white;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

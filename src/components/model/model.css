@@ -1,0 +1,58 @@
+.portal-container{
+    background-color: rgba(102, 51, 153, 0.352);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 66px;
+    right: 0;
+    width: 0;
+    height: calc(100vh - 66px);
+    z-index: 1000;
+    transition: .4s;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.deleteAll{
+    padding: 8px;
+    font-size: 18px;
+    background: brown;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .4s;
+}
+.deleteAll:hover{
+    background-color: red;
+}
+
+.portal-container.showportal{
+    width: 30%;
+}
+
+@media (max-width:992px){
+    
+    .portal-container.showportal{
+        width: 40%;
+    }
+}
+@media (max-width:768px){
+    .portal-container.showportal{
+        width: 50%;
+    }
+    
+}
+@media (max-width:570px){
+    .portal-container.showportal{
+        width: 100%;
+    }
+
+}

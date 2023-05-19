@@ -1,0 +1,88 @@
+.about{
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;
+}
+.about .container{
+
+}
+.aboutbox{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+}
+.aboutText{
+    width: 60%;
+    gap: 28px;
+    display: flex;
+    line-height: 1.4;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.aboutImg{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carabout{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    transform: translate(70px,-50%);
+}
+#carabout{
+    position: absolute;
+    left: 0;
+    top: 0%;
+    height: 100%;
+    transform: translate(20%,0);
+}
+#stone{
+    height: 80%;
+}
+
+@media (max-width:992px) {
+    .about .container{
+        width: 90%;
+    }
+    #stone {
+        height: 400px;
+    }
+    #carabout {
+        height: 400px;
+        transform: translate(20%,0);
+    }
+    .aboutbox{
+        gap: 10px;
+    }
+}
+@media (max-width:768px) {
+    #carabout{
+        height: 260px;
+        transform: translate(20%,-10%);
+    }
+    #stone {
+        height: 200px;
+    }
+    .aboutText{
+        font-size: 18px;
+    }
+}
+@media (max-width:570px) {
+    .aboutImg{
+        display: none;
+    }
+    .aboutText {
+        width: 100%;
+    }
+}

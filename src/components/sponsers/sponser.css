@@ -1,0 +1,25 @@
+.sponser{
+    background: #FAFAFA;
+    padding: 60px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sponser img{
+    height: 50px;
+    filter: grayscale(1);
+    transition: .4s;
+}
+
+.sponser img:hover{
+    transform: translate(0%,0%) rotate(360deg);
+    filter: grayscale(0);
+}
+@media (max-width:768px){
+    .sponser{
+        justify-content: center;
+    }
+}

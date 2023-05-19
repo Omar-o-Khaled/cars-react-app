@@ -1,0 +1,223 @@
+.cars {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.cars .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cars .headingContainer {
+    text-align: center;
+}
+.allBoxs{
+    position: relative;
+}
+.carIMGContainer{
+    height: 200px;
+}
+.carIMG {
+    width: 100%;
+    height: 80%;
+    user-select: none;
+    cursor: auto;
+}
+
+
+.ulBoxsContainer {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: 60px 0;
+    align-items: stretch;
+    padding: 20px;
+    gap: 50px;
+    background: #ffefef;
+    border-radius: 30px;
+    
+}
+
+.ulBoxsContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.liCarBox {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0 #00000040;
+    gap: 10px;
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+.liCarBox h3 {
+    font-size: 24px;
+    color: #741906;
+    font-weight: 700;
+}
+
+.liCarBox h6 {}
+
+.tools {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    gap: 6px;
+}
+
+.seats,
+.luggage {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #741906;
+}
+
+.seats img,
+.luggage img {
+    width: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    width: 120px;
+}
+#count{
+    min-width: 40%;
+    width: 40%;
+    align-self: stretch;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #741906;
+    outline: 0;
+}
+.controls button {
+    font-size: 20px;
+    font-weight: 700;
+    background: #741906;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    transition: .4s;
+    padding: 4px 10px;
+}
+.add{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.remove{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.controls button:hover{
+    background-color: red;
+}
+.description {
+    text-align: start;
+}
+.arrows {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+}
+.arrows p{
+    cursor: pointer;
+    background-color: #741906;
+    display: flex;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 0px 0px #00000090;
+    transition: .4s;
+    user-select: none;
+}
+.left:hover,
+.right:hover{
+    background-color: red;
+    box-shadow: 0 0 10px 4px #F44336;
+}
+.left:hover{
+    left: -4px;
+}
+.right:hover{
+    left: 4px;
+}
+
+.arrows span {}
+
+.swap{
+    display: none;
+}
+#errorCount{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    backdrop-filter: blur(2px);
+    transition: .4s;
+    overflow: hidden;
+}
+#errorText{
+    background: brown;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+}
+@media (max-width: 960px) {
+    .liCarBox {
+        width: 46%;
+    }
+    .carIMGContainer {
+        height: 150px;
+    }
+}
+@media (max-width:768px){
+    .ulBoxsContainer,.arrows {
+        width: 90%;
+    }
+    .ulBoxsContainer {
+        gap: 30px;
+    }
+    .liCarBox {
+        padding: 10px;
+    }
+
+}
+@media (max-width: 680px) {
+    .liCarBox {
+        width: 100%;
+    }
+}
