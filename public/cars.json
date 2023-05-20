@@ -1,0 +1,100 @@
+{
+    "cars": [
+        {
+            "title": "Car Name",
+            "describtion": "Car Describtion",
+            "photo": "./assets/Car1.png",
+            "id": 1
+        },
+        {
+            "title": "Car Name",
+            "describtion": "Car Describtion",
+            "photo": "./assets/Car2.png",
+            "id": 2
+        },
+        {
+            "title": "Car Name",
+            "describtion": "Car Describtion",
+            "photo": "./assets/Car3.png",
+            "id": 3
+        },
+        {
+            "title": "Car Name",
+            "describtion": "Car Describtion",
+            "photo": "./assets/Car4.png",
+            "id": 4
+        },
+        {
+            "title": "Car Name",
+            "describtion": "Car Describtion",
+            "photo": "./assets/Car5.png",
+            "id": 5
+        },
+        {
+            "title": "Car Name",
+            "describtion": "Car Describtion",
+            "photo": "./assets/Car6.png",
+            "id": 6
+        },
+        {
+            "title": "Car Name",
+            "describtion": "Car Describtion",
+            "photo": "./assets/Car7.png",
+            "id": 7
+        },
+        {
+            "title": "Car Name",
+            "describtion": "Car Describtion",
+            "photo": "./assets/Car8.png",
+            "id": 8
+        },
+        {
+            "title": "Car Name",
+            "describtion": "Car Describtion",
+            "photo": "./assets/Car9.png",
+            "id": 9
+        }
+    ],
+    "sponsers": [
+        {
+            "title": "BMW",
+            "photo": "./assets/sponser1.png",
+            "id": 1
+        },
+        {
+            "title": "Volvo",
+            "photo": "./assets/sponser2.png",
+            "id": 2
+        },
+        {
+            "title": "Suzuki",
+            "photo": "./assets/sponser3.png",
+            "id": 3
+        },
+        {
+            "title": "Toyota",
+            "photo": "./assets/sponser4.png",
+            "id": 4
+        },
+        {
+            "title": "NISSAN",
+            "photo": "./assets/sponser5.png",
+            "id": 5
+        },
+        {
+            "title": "Mercedes",
+            "photo": "./assets/sponser6.png",
+            "id": 6
+        },
+        {
+            "title": "Subaru",
+            "photo": "./assets/sponser7.png",
+            "id": 7
+        },
+        {
+            "title": "Mitsubishi",
+            "photo": "./assets/sponser8.png",
+            "id": 8
+        }
+    ]
+}

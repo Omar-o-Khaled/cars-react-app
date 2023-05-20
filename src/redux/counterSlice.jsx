@@ -53,7 +53,16 @@ export const counterSlice = createSlice({
                 return
             }
             createLocalStorage(state.items, state.totalCount)
+        }
+        ,
+        IncreseItem: (state, action) => {
+            action.payload.count + 1
+            let index = state.items.findIndex(item => item.id == action.payload.id)
+            state.items[index].count += 1
+            state.totalCount += 1
+            createLocalStorage(state.items, state.totalCount)
         },
+        
         decreseItem: (state, action) => {
             action.payload.count - 1
             let index = state.items.findIndex(item => item.id == action.payload.id)
@@ -73,6 +82,6 @@ export const counterSlice = createSlice({
     },
 })
 
-export const { add, remove, decreseItem, storageSlice, removeAllItems } = counterSlice.actions
+export const { add, remove, IncreseItem, decreseItem, storageSlice, removeAllItems } = counterSlice.actions
 
 export default counterSlice.reducer

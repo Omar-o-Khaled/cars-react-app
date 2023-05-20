@@ -1,6 +1,7 @@
 import React from 'react'
-import stone from '../../assets/aboutStone.png';
-import car from '../../assets/aboutCar.png';
+import stone from '../../../public/assets/aboutStone.png';
+// import car from '../../assets/aboutCar.png';
+import car from '../../../public/assets/aboutCar.png';
 
 import './about.css';
 

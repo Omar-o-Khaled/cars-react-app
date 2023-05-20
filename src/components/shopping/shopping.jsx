@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import shopping from '../../assets/shopping.png'
+import shopping from '../../../public/assets/shopping.png'
 import Cart from '../cart/cart';
 import Model from '../model/model';
 import { useDispatch, useSelector } from 'react-redux';

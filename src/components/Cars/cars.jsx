@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import React, { useContext  } from 'react';
+import { useSelector } from 'react-redux';
 import { context } from '../../App';
-import seats from '../../assets/seats.png';
-import luggage from '../../assets/luggage.png';
+import seats from '../../../public/assets/seats.png';
+import luggage from '../../../public/assets/luggage.png';
 import Controls from './controls';
 import './arrow.js'
 
@@ -11,7 +12,8 @@ import './cars.css';
 
 const Cars = () => {
   const carsArray = useContext(context);
-
+  let items = useSelector(state => state.counter.items);
+  
   const elements = (
     <div>
       <div className="container headingContainer">
@@ -32,6 +34,8 @@ const Cars = () => {
                 id={i}
                 draggable
               >
+                {items[items.findIndex(item=>{return item.id==i})]?
+                <div className='itemCount'>{items[items.findIndex(item=>{return item.id==i})].count}</div>:<div className='noItemCount'>0</div>}
                 <div className="carIMGContainer">
                   <img
                     src={obj.image}

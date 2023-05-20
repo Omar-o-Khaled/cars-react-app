@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { context } from '../../App'
-import blue from '../../assets/blue.png';
+import blue from '../../../public/assets/blue.png';
 import './testimonials.css';
 
 const Testimonials = () => {

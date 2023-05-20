@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './cart.css'
 import { useDispatch, useSelector } from 'react-redux';
-import { add, remove, decreseItem, storageSlice } from '../../redux/counterSlice';
+import { add, remove, IncreseItem,decreseItem, storageSlice } from '../../redux/counterSlice';
 
 const Cart = () => {
 
@@ -19,7 +19,7 @@ const Cart = () => {
             }
         })
 
-        dispatch(add(items[indexId]))
+        dispatch(IncreseItem(items[indexId]))
     }
     function cartremoveFunction(ele) {
         let idSelected = ele.target.closest('.cartItem').id;

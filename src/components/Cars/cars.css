@@ -60,6 +60,7 @@
     gap: 10px;
     flex: 0 0 auto;
     width: 30%;
+    position: relative;
 }
 
 .liCarBox h3 {
@@ -142,6 +143,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 40px;
+    z-index: 1000;
 }
 .arrows p{
     cursor: pointer;
@@ -183,11 +185,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 34px;
     color: white;
     backdrop-filter: blur(2px);
     transition: .4s;
     overflow: hidden;
+    z-index: 1000;
+}
+.itemCount,
+.noItemCount{
+    padding: 4px 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: auto;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    background: red;
+}
+.itemCount{
+    box-shadow: 0 0 8px 2px #ff0000bf;
+}
+.noItemCount{
+    background: darkgray;
 }
 #errorText{
     background: brown;
@@ -205,7 +228,8 @@
     }
 }
 @media (max-width:768px){
-    .ulBoxsContainer,.arrows {
+    .ulBoxsContainer,
+    .arrows {
         width: 90%;
     }
     .ulBoxsContainer {
@@ -214,10 +238,25 @@
     .liCarBox {
         padding: 10px;
     }
-
+    #errorCount{
+        font-size: 32px;
+    }
 }
 @media (max-width: 680px) {
     .liCarBox {
         width: 100%;
+    }
+    .cars .container{
+        padding: 0;
+    }
+    #errorCount{
+        font-size: 28px;
+    }
+    #errorText{
+        width: 94%;
+        padding: 10px;
+    }
+    .arrows{
+        width: 96%;
     }
 }

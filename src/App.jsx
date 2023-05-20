@@ -7,7 +7,7 @@ import Services from './components/Services/services';
 import Cars from './components/Cars/cars';
 import Contact from './components/Contact-us/contact';
 import Notfound from './components/notfound/Notfound'
-import carsData from './data.json';
+import carsData from '../public/data.json';
 import  './components/js/script';
 import './App.css';
 import Products from './components/products/products';

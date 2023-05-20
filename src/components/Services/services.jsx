@@ -1,8 +1,8 @@
 import React from 'react'
-import bluecar from '../../assets/carbluese.png';
-import star from '../../assets/icon_1.png';
-import rental from '../../assets/icon_2.png';
-import diamond from '../../assets/icon_3.png';
+import bluecar from '../../../public/assets/carbluese.png';
+import star from '../../../public/assets/icon_1.png';
+import rental from '../../../public/assets/icon_2.png';
+import diamond from '../../../public/assets/icon_3.png';
 import './services.css'
 
 const Services = () => {

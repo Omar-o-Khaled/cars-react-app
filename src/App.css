@@ -1,6 +1,6 @@
 .App{
   position: relative;
-  background-image: url(./assets/Background.png);
+  background-image: url(../public/assets/Background.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

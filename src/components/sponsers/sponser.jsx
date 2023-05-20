@@ -1,5 +1,5 @@
 import React from 'react'
-import sponserobj from '../../cars.json';
+import sponserobj from '../../../public/cars.json';
 import './sponser.css';
 
 const Sponser = () => {

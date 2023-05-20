@@ -1,5 +1,5 @@
 import React from 'react'
-import carsImges from '../../cars.json';
+import carsImges from '../../../public/cars.json';
 import Imghover from './imghover';
 import './products.css';
 
