@@ -2,7 +2,8 @@
 import { defineConfig } from "file:///F:/bonean/react3%20-%20Copy/vite-project/node_modules/vite/dist/node/index.js";
 import react from "file:///F:/bonean/react3%20-%20Copy/vite-project/node_modules/@vitejs/plugin-react/dist/index.mjs";
 var vite_config_default = defineConfig({
-  plugins: [react()]
+  plugins: [react()],
+  base:'/Car-react-app/',
 });
 export {
   vite_config_default as default
